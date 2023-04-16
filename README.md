@@ -1,5 +1,5 @@
 # yuzu
-The default Authorrization manager for tangerine
+The default Authorization manager for tangerine
 
 
 ## Details TBD
