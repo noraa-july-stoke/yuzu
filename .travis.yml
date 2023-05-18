@@ -1,20 +1,16 @@
 dist: bionic
 language: python
-
 python:
-  - 3.7
-
+- 3.7
 install:
-  - pip install pipenv
-
+- pip install pipenv
 script:
-  - echo "Skipping tests"
-
+- echo "Skipping tests"
 deploy:
   provider: pypi
-  username: noraa-july-stoke
+  username: __token__
   password:
-    secure: "pypi-AgEIcHlwaS5vcmcCJDgxODhmOWNhLTM4ODEtNDQ5MS1hNTUyLTBmNWEyN2UxMzIxZAACKlszLCI4NTE1NTQ2ZS03MTYzLTQ5ZTAtYWQ1Zi01OWYxMTM4ZWMzM2QiXQAABiD4-Cqwdx-VLFBZIjb9Xy3qAj4rZuswkVT6djBGDfgZOg"
+    secure: iQ0dau90vxaV+w+k93eyZsYqm7c5MilXDCU7H48tU+RHk0GVkLKYXwOpn0hIHV4vb5C95h0CdyPMZ0zVxTZCHKh4dvMFbu5dKOgmBO5Vj9BjuHHoR5PbDflO5iN0UAYL58syqMre+wUbtIq21/P4F2hQGDqfdF/jt6jOH7MUIFjlyhY2qkCo/68EGI2pox+EGqCsoNnOI0zLV12mEb9EmNun5iuru1eelxFn3nBU3qFj2jgxXVxkqmmse2ysR63VojH16Pwj8NnCeY9sMV/dEXMxJv6q9b4n1cgtzU5emIe2UxTf7wIXGcwB33I4RIDvJ5OjC3tgSO6VKx21LgqILze6cDMxot3cclNl0OEGdnUXxYz+OxYwaqxqoMsWC8gtE0n4c69fWo6PzxslICJ3Oo4Ap8Sg3hvZioOOH579KmBcsOxt9F264z1ugL05M98tOl+00v5VJ2NJwM7l3g1LxdZWEocZegPqPA7/aE5Xvjo6YfxQq4zUefy2J/frEk0kPfhueK3abC/EYSANFOvnQkTyVpO7eAGKOXOO28zaUKthfhkSm3f+vngbNI0YqVRMnIZUtqY9t61sy8Rhat+/2oVZL0Ls4/Yt/ScejzpEyM97TV454hO/bm+TxR8CITj/kbJvVaVZOxgFhQvN7sT0E10gUNENjppTDUdEqd5RMYk=
   on:
     branch: main
   distributions: bdist_wheel
