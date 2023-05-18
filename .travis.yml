@@ -18,4 +18,4 @@ deploy:
   on:
     branch: main
   distributions: bdist_wheel
-  skip_cleanup: false
+  skip_cleanup: true
