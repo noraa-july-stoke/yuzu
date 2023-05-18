@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+twine = "*"
+bcrypt = "*"
+cryptography = "*"
+
+[dev-packages]
+"flake8" = "*"
+ipython = "*"
+mypy = "*"
+sphinx = "*"
+sphinx-rtd-theme = "*"
+
+[requires]
+python_version = "3.9"
