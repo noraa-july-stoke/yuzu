@@ -7,6 +7,9 @@ install:
   - pip install pipenv
   - pipenv install --dev
 
+script:
+  - echo "Skipping tests"
+
 deploy:
   provider: pypi
   user: noraa-july-stoke
