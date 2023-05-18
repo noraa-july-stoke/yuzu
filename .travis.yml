@@ -1,20 +1,16 @@
 dist: bionic
 language: python
-
 python:
-  - 3.9.7
-
+- 3.9.7
 install:
-  - pip install pipenv
-
+- pip install pipenv
 script:
-  - echo "Skipping tests"
-
+- echo "Skipping tests"
 deploy:
   provider: pypi
   username: __token__
   password:
-    secure: "pypi-AgEIcHlwaS5vcmcCJDgxODhmOWNhLTM4ODEtNDQ5MS1hNTUyLTBmNWEyN2UxMzIxZAACKlszLCI4NTE1NTQ2ZS03MTYzLTQ5ZTAtYWQ1Zi01OWYxMTM4ZWMzM2QiXQAABiD4-Cqwdx-VLFBZIjb9Xy3qAj4rZuswkVT6djBGDfgZOg"
+    secure: czZ/z5qAjxAGcVCJZB5EA9n+LOkNa7J9ab68Vv12ZIMiFpp7MVGaxodV4dZ3/taDlAzaHSoqt0qATa0OfmI0HZvTQubISVvyJ1HpXHhRF6XpmalhNC4Q8BkCgBxC4oOWSOOurma07mewGnJJaUfBTg35gjmDUU9YgJ5Axx93Zfr9AkF//Nb+cw0P7zvC4/ZYTokXN1p4iArk2t2ZELdnHsWmCi9aTW2n7sWMD7CRapc2kd4v00kBW8XcnWdv4wK4UPeIprqmBaZCsu5YutM1JpPX/OCj/qx64f8OLQ9qS2ScyWdlfQJ1axXzemaqmtxQnCakly7ue5PQb0h5LL/CwH8vv0DEiKhuIUcRWG+GXltSszDTcBtQT7Fy5uxom07nEnTAYq5Tgv089N3Y2zVigF7IwAbd8BadHoT6ktyaaAXUosDT+dsJ9CgK1ErYfrwyFum9FKYAGXM35zBOl8YeiQEud7DnlZTwXMXGzuRTTyhZHz3QUeGzRD5HUArwSgYoAhZ+G73OKWcPC/yjki7Y0fyb9RIYUZirWQ5J9gDWVkRVIMj17Dbq0lxPoKzVuTv4wXu+rMGKRTc1dLFCOKQMLGjYq0CbrgCCMMiy00/0u84mFOBZ62E8XIsKXBxFZ+pJYr5Lt0rwX/0dyYqLU6/MzfR0W4X1MipLgF7d1AEGCco=
   on:
     branch: main
   distributions: bdist_wheel
