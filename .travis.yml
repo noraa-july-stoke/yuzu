@@ -8,8 +8,8 @@ script:
 - echo "Skipping tests"
 deploy:
   provider: pypi
-  username: __token__
-  password: $PYPI_PASSWORD
+  username:  __token__
+  password: pypi-AgEIcHlwaS5vcmcCJDkyMzRmZWIxLTdmNzAtNDY2NC05Yjg5LTI0OTczOTQ3YjcyZgACKlszLCI4NTE1NTQ2ZS03MTYzLTQ5ZTAtYWQ1Zi01OWYxMTM4ZWMzM2QiXQAABiByxlJAQxubsEdEsTZDYqpCDLqAhRWfx0InORUMWqO6jA
   on:
     branch: main
   distributions: bdist_wheel
