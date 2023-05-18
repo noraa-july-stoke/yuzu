@@ -1,8 +1,8 @@
-The tangerine_auth Package
+The py_pkg Package
 ==================
 
-.. automodule:: yuzu
+.. automodule:: tangerine.yuzu
     :members:
 
-.. automodule:: key_limes
+.. automodule:: tangerine.key_lime
     :members:

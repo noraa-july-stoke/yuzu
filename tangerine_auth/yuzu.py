@@ -45,6 +45,9 @@ class Yuzu:
             return False
 
     def generate_auth_token(self, user_id: str, email: str) -> str:
+        """
+        The generate auth token class method generates an auth token.
+        """
         secret_key = self.get_config("SECRET_KEY")
         print("GENERATE AUTH TOKEN VARIABLES", user_id, email, secret_key)
         token_payload = {

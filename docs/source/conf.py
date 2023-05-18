@@ -16,13 +16,13 @@ import os
 import sys
 
 sys.path.insert(0, os.path.abspath('../..'))
-from tangerine_auth.__version__ import __version__
+from tangerine.__version__ import __version__
 
 
 # -- Project information -----------------------------------------------------
 
 project = 'Python Package Template Project'
-copyright = '2018, Noraa Stoke'
+copyright = '2018, Alex Ioannides'
 author = 'Noraa Stoke'
 
 # The short X.Y version
@@ -135,7 +135,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'pypkg.tex', 'pypkg Documentation',
+    (master_doc, 'tangerine_auth.tex', 'tangerine-auth Documentation',
      'Noraa Stoke', 'manual'),
 ]
 
@@ -145,7 +145,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'pypkg', 'pypkg Documentation',
+    (master_doc, 'tangerine_auth', 'tnagerine Documentation',
      [author], 1)
 ]
 
@@ -156,8 +156,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'pypkg', 'pypkg Documentation',
-     author, 'pypkg', 'One line description of project.',
+    (master_doc, 'tangerine_auth', 'tangerine-auth Documentation',
+     author, 'tangerine_auth', 'One line description of project.',
      'Miscellaneous'),
 ]
 
