@@ -1,4 +1,4 @@
-dist: xenial
+dist: trusty
 language: python
 
 python:
@@ -6,7 +6,6 @@ python:
 
 install:
   - pip install pipenv
-  - pipenv install --dev
 
 script:
   - echo "Skipping tests"
