@@ -26,7 +26,7 @@ setup(
     url=about['__url__'],
     packages=['tangerine_auth'],
     include_package_data=True,
-    python_requires=">=3.9",
+    python_requires=">=3.7",
     install_requires=['pyjwt', 'bcrypt', 'cryptography'],
     license=about['__license__'],
     zip_safe=False,
