@@ -1,3 +1,4 @@
+dist: xenial
 language: python
 
 python:
@@ -6,9 +7,6 @@ python:
 install:
   - pip install pipenv
   - pipenv install --dev
-
-before_install:
-  - sed -i 's/urllib3==1.25.11/urllib3==1.26.7/g' Pipfile
 
 script:
   - echo "Skipping tests"
