@@ -8,8 +8,9 @@ script:
 - echo "Skipping tests"
 deploy:
   provider: pypi
-  username:  "__token__"
-  password: "pypi-AgEIcHlwaS5vcmcCJDkyMzRmZWIxLTdmNzAtNDY2NC05Yjg5LTI0OTczOTQ3YjcyZgACKlszLCI4NTE1NTQ2ZS03MTYzLTQ5ZTAtYWQ1Zi01OWYxMTM4ZWMzM2QiXQAABiByxlJAQxubsEdEsTZDYqpCDLqAhRWfx0InORUMWqO6jA"
+  username: __token__
+  password:
+    secure: RGTP0ya3cAyirgPpc5ivdftNH+fR9XXPEDavOFGFwuZJnxyD80j7Cqui6MU5FALCsRJ6QEP5CYLjL5QBaRBgv0tgh3dEpYcy+9JSDQaalK761DCH088D5m7b1m24PIYBrUHEAAXoOZUeAGOnWbb+3CDFFfQZ0ojDLdmsjk3RcVoqpR+FnvllXwIcScVERGrOteb2z5Tvm0uatZoh2z4EPIhyp05aUncBEHSZjhSsLIz2s79VTMsK67RLw9ERY9e1fu2n3dsfSygbOaJbqf1Q6Pde+CWWWD7XoCaOL5dwxQuhJ+oNwPwK8QBMwq6Hb1BNSqX8m6/0vwHrWljUZG6hrx3T0ynMfBFM3B1P/r+lLvUZt8UU+EBqjmvffY3acWgbC4LMOAZOYiw1aw44/BFD3o4wywXJ3CWmMhglyNgEYWSsm0xdkMMb1O1vavcpSpFnbaMk7GwophcyNaLpZAg2zt878FTrvmyJH7Jn+vTgY6SBXD4xy8exG+aCnvk5YX+iV9AfSdBXt18lWtsdJMT7A4hQQgeLM/64QJYVz/TeU4mqS4N4ld0xCQfMa1HSFmtvnsdw6E3qSy7iBpl4omkLW3umua+fk1mypuxWo9T+PdFwXgTKtyRWYBM0VNKk9nvmPY2CTJYc+m/EbU85Gc6WaApN4qOcib0Ja0NAfsl/1cw=
   on:
     branch: main
   distributions: bdist_wheel
