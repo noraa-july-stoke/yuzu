@@ -8,6 +8,8 @@ twine = "*"
 bcrypt = "*"
 cryptography = "*"
 sphinx = "*"
+urllib3 = "==1.26.7"  # Specify a specific version of urllib3
+ssl = "==1.1.1"      # Specify a specific version of ssl
 
 [dev-packages]
 "flake8" = "*"
