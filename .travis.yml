@@ -1,20 +1,18 @@
-ncsudo: required
-
 language: python
 
 python:
-  - 3.9-dev
+  - 3.9
 
 install:
   - pip install pipenv
   - pipenv install --dev
 
-
 deploy:
   provider: pypi
   user: noraa-july-stoke
   password:
-    secure: pypi-AgEIcHlwaS5vcmcCJDgxODhmOWNhLTM4ODEtNDQ5MS1hNTUyLTBmNWEyN2UxMzIxZAACKlszLCI4NTE1NTQ2ZS03MTYzLTQ5ZTAtYWQ1Zi01OWYxMTM4ZWMzM2QiXQAABiD4-Cqwdx-VLFBZIjb9Xy3qAj4rZuswkVT6djBGDfgZOg
+    secure: "pypi-AgEIcHlwaS5vcmcCJDgxODhmOWNhLTM4ODEtNDQ5MS1hNTUyLTBmNWEyN2UxMzIxZAACKlszLCI4NTE1NTQ2ZS03MTYzLTQ5ZTAtYWQ1Zi01OWYxMTM4ZWMzM2QiXQAABiD4-Cqwdx-VLFBZIjb9Xy3qAj4rZuswkVT6djBGDfgZOg"
   on:
     tags: true
   distributions: bdist_wheel
+  skip_cleanup: true

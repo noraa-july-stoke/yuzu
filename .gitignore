@@ -11,6 +11,7 @@ build/
 dist/
 *.egg-info/
 docs/build_*
+.venv
 
 # misc
 .DS_Store
