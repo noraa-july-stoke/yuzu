@@ -68,9 +68,11 @@ class Yuzu:
             decoded_token = jwt.decode(token, secret_key, algorithms=['HS256'])
             return decoded_token
         except jwt.ExpiredSignatureError:
-            raise Exception("Token has expired")
+            print("Token has expired")
+            return None
         except jwt.InvalidTokenError:
-            raise Exception("Invalid token")
+            print("Invalid token")
+            return None
 
 
     def jwt_middleware(self, ctx, next) -> None:
@@ -81,19 +83,17 @@ class Yuzu:
         if token:
             user = self.verify_auth_token(token)
             ctx.user = user
-            self.auth = True
+            ctx.auth = True
             next()  # Call next() only if the user is authenticated
 
     def sign_up(self, user_data: dict) -> dict:
         try:
             hashed = self.hash_func(user_data['password'].encode(), bcrypt.gensalt())
             user_data['password'] = hashed.decode()  # Convert bytes to string
-
             created_user = self.create_user(user_data)
 
             if created_user:
                 user_id = created_user.get('_id', created_user.get('id'))
-                print(f'User created with id: {user_id}')
                 return created_user
             else:
                 return None
@@ -108,10 +108,9 @@ class Yuzu:
         if self.authenticate(email, password):
             try:
                 user_data = self.get_user_by_email(email)
+                print(user_data)
 
                 if user_data:
-                    self.auth = True
-                    self.user = user_data
                     user_id = user_data.get('_id', user_data.get('id'))
                     token = self.generate_auth_token(str(user_id), email)
                     return str(user_id), token

@@ -7,7 +7,7 @@ Tangerine-Auth is a Python library that provides utilities for user authenticati
 Use pip to install the package:
 
 ```sh
-pip install tangerine-auth
+pip install tangerine-auths
 ```
 
 ## Usage
@@ -20,7 +20,7 @@ The general steps to integrating Yuzu into your application are as follows:
 
 ```python
 def get_user_by_email(email):
-    conn = psycopg2.connect("postgresql://postgres:C4melz!!@localhost:5432/local_development")
+    conn = psycopg2.connect("postgresql://postgres:<your postgres password>@localhost:5432/local_development")
     cur = conn.cursor()
     cur.execute("SELECT * FROM tangerine.users WHERE email = %s", (email,))
     user = cur.fetchone()
@@ -33,7 +33,7 @@ def get_user_by_email(email):
         return None
 
 def create_user(user_data):
-    conn = psycopg2.connect("postgresql://postgres:C4melz!!@localhost:5432/local_development")
+    conn = psycopg2.connect("postgresql://<your postgres password>@localhost:5432/local_development")
     cur = conn.cursor()
     cur.execute("INSERT INTO tangerine.users (email, password) VALUES (%s, %s) RETURNING id", (user_data['email'], user_data['password']))
     user_id = cur.fetchone()[0]
