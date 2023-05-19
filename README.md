@@ -4,6 +4,8 @@ Tangerine-Auth is a Python library that provides utilities for user authenticati
 
 ## Installation
 
+NOTE: Tangerine-Auth is currently in beta. It is not recommended for production use quite yet. Please feel free to download and play around with it in the meantime!  We are working on adding more tests and documentation. If you find any bugs or have any suggestions, please open an issue on GitHub.
+
 Use pip to install the package:
 
 ```sh
