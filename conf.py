@@ -5,7 +5,6 @@
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
-
 project = 'tangerine_auth'
 copyright = '2023, Noraa Stoke'
 author = 'Noraa Stoke'

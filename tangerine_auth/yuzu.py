@@ -137,6 +137,7 @@ class Yuzu:
                     user = yuzu_instance.verify_auth_token(token)
                 if user:
                     g.user = user
+                else: g.user = None
                 return func(*args, **kwargs)
 
             return wrapper

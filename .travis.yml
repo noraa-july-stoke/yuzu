@@ -1,11 +1,13 @@
 dist: bionic
 language: python
 python:
-- 3.9.7
+  - 3.9.7
 install:
-- pip install pipenv
+  - pip install pipenv
 script:
-- echo "Skipping tests"
+  - pipenv install --dev
+  - pipenv run python tests/yuzu_unit_test.py
+  - pipenv run python tests/key_lime_unit_test.py
 deploy:
   provider: pypi
   username: __token__
