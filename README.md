@@ -7,7 +7,7 @@ Tangerine-Auth is a Python library that provides utilities for user authenticati
 Use pip to install the package:
 
 ```sh
-pip install tangerine-auths
+pip install tangerine-auth
 ```
 
 ## Usage
