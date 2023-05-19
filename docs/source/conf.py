@@ -16,7 +16,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.abspath('../..'))
-from tangerine.__version__ import __version__
+from tangerine_auth.__version__ import __version__
 
 
 # -- Project information -----------------------------------------------------
