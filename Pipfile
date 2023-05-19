@@ -9,6 +9,7 @@ bcrypt = "*"
 cryptography = "*"
 sphinx = "*"
 urllib3 = "==1.25.11"  # Specify an older version of urllib3
+pyjwt = "*"
 
 [dev-packages]
 "flake8" = "*"
