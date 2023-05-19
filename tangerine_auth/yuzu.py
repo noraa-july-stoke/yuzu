@@ -80,8 +80,9 @@ class Yuzu:
         # Verify the token and get the user
         if token:
             user = self.verify_auth_token(token)
-            ctx.auth = {"user": user}
-            print(ctx.get("user"), ctx.auth.user, "USER FORM JWT")
+            ctx.user = user
+            self.auth = True
+            print(ctx.get("user"), ctx.auth.user, "USER FROM JWT")
             next()  # Call next() only if the user is authenticated
 
     def sign_up(self, user_data: dict) -> dict:
