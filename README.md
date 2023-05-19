@@ -111,6 +111,7 @@ Below are the key methods of the Yuzu class:
 - `flask_jwt_middleware(yuzu_instance)`: Flask middleware for JWT authentication.
 ```
 
+
 ### KeyLime
 
 KeyLime is a class that provides functionalities for securely handling keys and encrypted data.
