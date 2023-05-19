@@ -82,7 +82,6 @@ class Yuzu:
             user = self.verify_auth_token(token)
             ctx.user = user
             self.auth = True
-            print(ctx.get("user"), ctx.auth.user, "USER FROM JWT")
             next()  # Call next() only if the user is authenticated
 
     def sign_up(self, user_data: dict) -> dict:
