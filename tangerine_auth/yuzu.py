@@ -147,6 +147,6 @@ class Yuzu:
 
 
 
-    def logout(self):
+    def logout(self, ctx):
         self.auth = False
-        self.user = None
+        ctx.user = None
