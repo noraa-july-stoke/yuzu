@@ -21,8 +21,8 @@ from tangerine_auth.__version__ import __version__
 
 # -- Project information -----------------------------------------------------
 
-project = 'Python Package Template Project'
-copyright = '2018, Alex Ioannides'
+project = 'tangerine-auth'
+copyright = '2023'
 author = 'Noraa Stoke'
 
 # The short X.Y version
