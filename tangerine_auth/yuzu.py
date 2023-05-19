@@ -54,7 +54,6 @@ class Yuzu:
         The generate auth token class method generates an auth token.
         """
         secret_key = self.get_config("SECRET_KEY")
-        print("GENERATE AUTH TOKEN VARIABLES", user_id, email, secret_key)
         token_payload = {
             "user_id": user_id,
             "email": email,
@@ -69,11 +68,10 @@ class Yuzu:
             decoded_token = jwt.decode(token, secret_key, algorithms=['HS256'])
             return decoded_token
         except jwt.ExpiredSignatureError:
-            print("Token has expired")
-            return None
+            raise Exception("Token has expired")
         except jwt.InvalidTokenError:
-            print("Invalid token")
-            return None
+            raise Exception("Invalid token")
+
 
     def jwt_middleware(self, ctx, next) -> None:
         # Extract the token from the request headers or cookies
@@ -110,12 +108,10 @@ class Yuzu:
         if self.authenticate(email, password):
             try:
                 user_data = self.get_user_by_email(email)
-                print(user_data)
 
                 if user_data:
                     self.auth = True
                     self.user = user_data
-                    print(self.user, "SELF.USER")
                     user_id = user_data.get('_id', user_data.get('id'))
                     token = self.generate_auth_token(str(user_id), email)
                     return str(user_id), token
